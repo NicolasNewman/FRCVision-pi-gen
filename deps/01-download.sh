@@ -27,4 +27,8 @@ wget -nc -nv \
 wget -nc -nv \
     https://github.com/opencv/opencv/archive/3.4.4.tar.gz
 
+# pixy sources
+wget -nc -nv \
+    https://github.com/NicolasNewman/pixy2/archive/master.tar.gz
+
 popd

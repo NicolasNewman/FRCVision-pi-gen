@@ -6,6 +6,9 @@ pushd 02-extract
 # raspbian toolchain
 tar xzf ../01-download/Raspbian9-Linux-Toolchain-*.tar.gz
 
+# pixy sources
+tar xzf ../01-download/master.tar.gz
+
 # additional headers/libs
 pushd raspbian9/arm-raspbian9-linux-gnueabihf
 
