@@ -49,7 +49,7 @@ sh -c 'cd 03-build/opencv-build-debug/install/share/OpenCV && tar czf - *.cmake'
 cp 03-build/opencv-build/install/python/cv2/python-*/cv2.*.so ${DEST}/cv2.cpython-35m-arm-linux-gnueabihf.so
 cp 03-build/pixy2_build/build/python_demos/_pixy.*.so ${DEST}/_pixy.cpython-35m-arm-linux-gnueabihf.so
 #
-# robotpy-cscore87
+# robotpy-cscore
 #
 
 sh -c 'cd robotpy-cscore && tar czf - cscore' > ${DEST}/robotpy-cscore.tar.gz

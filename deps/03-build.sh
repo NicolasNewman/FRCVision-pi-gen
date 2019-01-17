@@ -123,7 +123,7 @@ cmake ../../allwpilib \
     -DCMAKE_BUILD_TYPE=RelWithDebugInfo \
     -DCMAKE_TOOLCHAIN_FILE=${PWD}/../../02-extract/arm-pi-gnueabihf.toolchain.cmake \
     -DCMAKE_MODULE_PATH=${PWD}/../../02-extract/cmake-modules \
-    -DOpenCV_DIR=${PWD}/../opencv-static/install/cd share/OpenCV \
+    -DOpenCV_DIR=${PWD}/../opencv-static/install/share/OpenCV \
     -DWITHOUT_JAVA=ON \
     -DBUILD_SHARED_LIBS=OFF \
     -DTHREADS_PTHREAD_ARG=-pthread \
@@ -138,7 +138,7 @@ pushd 03-build/pixy2-build/scripts
 source build_python_demos.sh
 popd
 
-# tools
-# pushd tools
-# make || exit 1
-# popd
+tools
+pushd tools
+make || exit 1
+popd
